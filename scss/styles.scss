@@ -640,6 +640,10 @@ footer {
     -------------------------------
 */
 
+
+$break-large: 769px;
+$break-xlarge: 992px; 
+
 #projects {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
@@ -656,8 +660,11 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fefefec2;
+    background: #ffffff;
     border-radius: 4px;
+    @media screen and (min-width: $break-large) {
+        background: #fefefec2;
+    }
 }
 
 .project-image {
@@ -668,8 +675,6 @@ footer {
     width:260px;
 }
 
-$break-large: 769px;
-$break-xlarge: 992px;
 
 .project-info {
     position: absolute;
